@@ -3,7 +3,7 @@ This is a functional inventory management system.
 
   Admin username and password   
 
-  username : admin@localhost.com  
+  username : admin@moca.com  
   pass : password
 
 
