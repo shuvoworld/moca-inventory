@@ -1,7 +1,7 @@
 <!-- Logo -->
 <a href="<?php echo site_url( 'admin/dashboard' ); ?>" class="logo">
 	<!-- mini logo for sidebar mini 50x50 pixels -->
-	<span class="logo-mini">AP</span>
+	<span class="logo-mini">স্টোর</span>
 	<!-- logo for regular state and mobile devices -->
 	<span class="logo">Dashboard </span>
 </a>

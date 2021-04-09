@@ -1,7 +1,7 @@
 <section class="sidebar fixed ">
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu">
-        <!--        <li class="header">MAIN NAVIGATION</li>-->
+        <!--        <li class="header">নেভিগেশন</li>-->
         <li class="treeview">
             <a href="<?php echo site_url('admin/dashboard/index'); ?>">
                 <span class="glyphicon glyphicon-home"></span> <span>ড্যাশবোর্ড</span>

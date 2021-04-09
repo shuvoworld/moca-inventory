@@ -1,5 +1,5 @@
 <div class="pull-right hidden-xs">
-	<b>Maintained By </b> <a href="#">ICT Cell, MoWCA</a>
+	<b>Maintained By </b> <a href="https://moca.gov.bd">Ministry of Cultural Affairs</a>
 </div>
 <strong>Copyright &copy; <?php echo date('Y') ?> .</strong> All rights reserved.
 
