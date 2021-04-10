@@ -11,8 +11,6 @@
 <script src="<?php echo base_url(); ?>assets/js/app.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/plugins/slimScroll/jquery.slimscroll.min.js"></script>
 
-<!-- Select2 library -->
-<link rel="stylesheet" href="<?php echo base_url('assets/plugins/select2/select2.min.css'); ?>">
 <script src="<?php echo base_url('assets/plugins/select2/select2.full.min.js'); ?>"></script>
 
 <!-- Date picker library -->
@@ -27,7 +25,6 @@
 <!-- Sweet Alert library -->
 <link rel="stylesheet" href="<?php echo base_url('assets/plugins/sweet-alert/sweetalert.css'); ?>">
 <script src="<?php echo base_url('assets/plugins/sweet-alert/sweetalert.min.js'); ?>"></script>
-<script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
 
 <?php if (isset($before_body)) {
     echo $before_body;

@@ -31,3 +31,12 @@ ERROR - 2021-04-09 18:37:07 --> Could not find the language line "login_identity
 ERROR - 2021-04-09 18:37:07 --> Could not find the language line "login_password_label"
 ERROR - 2021-04-09 18:37:09 --> 404 Page Not Found: /index
 ERROR - 2021-04-09 18:56:34 --> 404 Page Not Found: /index
+ERROR - 2021-04-09 20:57:10 --> Could not find the language line "login_identity_label"
+ERROR - 2021-04-09 20:57:11 --> Could not find the language line "login_password_label"
+ERROR - 2021-04-09 20:57:19 --> Could not find the language line "login_identity_label"
+ERROR - 2021-04-09 20:57:19 --> Could not find the language line "login_password_label"
+ERROR - 2021-04-09 20:57:20 --> 404 Page Not Found: /index
+ERROR - 2021-04-09 20:57:39 --> 404 Page Not Found: /index
+ERROR - 2021-04-09 20:57:39 --> 404 Page Not Found: /index
+ERROR - 2021-04-09 22:41:20 --> Severity: Warning --> Invalid argument supplied for foreach() D:\xampp\htdocs\moca_inventory\application\modules\admin\views\purchases\add.php 28
+ERROR - 2021-04-09 22:41:29 --> 404 Page Not Found: /index

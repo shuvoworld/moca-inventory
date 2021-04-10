@@ -13,13 +13,14 @@
 <link rel = "stylesheet" href = "<?php echo base_url(); ?>assets/css/AdminLTE.min.css">
 <link rel = "stylesheet" href = "<?php echo base_url(); ?>assets/css/_all-skins.min.css">
 <link rel = "stylesheet" href = "<?php echo base_url(); ?>assets/css/custom_admin_style.css">
-<link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
+<link rel = "stylesheet" href = "<?php echo base_url(); ?>assets/plugins/select2/select2.css">
+<link rel = "stylesheet" href = "<?php echo base_url(); ?>assets/css/custom_admin_style.css">
 
-<link rel = "stylesheet" href = "<?php echo base_url(); ?>assets/css/select2-bootstrap.css">
+
 <!-- iCheck -->
 
 <!-- jQuery 2.1.4 -->
-<script src = "<?php echo base_url(); ?>assets/js/jQuery-2.1.4.min.js"></script>
+<script src = "<?php echo base_url(); ?>assets/plugins/jQuery/jQuery-2.1.4.min.js"></script>
 <script src = "<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 
 <?php if (isset($before_head)) {

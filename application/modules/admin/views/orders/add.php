@@ -22,8 +22,8 @@
 
 		<div class="form-group col-md-2 col-sm-12">
 		<label>section</label>
-			<select class="form-control" id="section_id" name="section_id" required>
-		<option value="">Select</option>
+			<select class="form-control select2" id="section_id" name="section_id" required style="width: 100%;>
+		<option value="">নির্বাচন করুন</option>
 
 		<?php foreach ($sections as $section): ?>
 			<option value="<?=$section['id']?>"><?=$section['name']?></option>
@@ -60,8 +60,8 @@
 			<tbody>
 			<tr id="row_1">
 			<td>
-			<select class="form-control select_group product" data-row-id="row_1" id="product_1" name="product[]" style="width:100%;">
-			<option value=""></option>
+			<select class="form-control select2 product" data-row-id="row_1" id="product_1" name="product[]" style="width:100%;">
+			<option value="">নির্বাচন করুন</option>
 				<?php foreach ($products as $k => $v): ?>
 				<option value="<?php echo $v['id'] ?>"><?php echo $v['name'] . " == বর্তমান মজুদ => " . $v['stock_available'] ?></option>
 				<?php endforeach?>
@@ -111,8 +111,8 @@
 					// console.log(reponse.x);
 					var html = '<tr id="row_'+row_id+'">'+
 					'<td>'+
-					'<select class="form-control select_group product" data-row-id="'+row_id+'" id="product_'+row_id+'" name="product[]" style="width:100%;">'+
-					'<option value=""></option>';
+					'<select class="form-control select2select2 product" data-row-id="'+row_id+'" id="product_'+row_id+'" name="product[]" style="width:100%;">'+
+					'<option value="">নির্বাচন করুন</option>';
 					$.each(response, function(index, value) {
 						html += '<option value="'+value.id+'">'+value.name+'</option>';
 					});
@@ -138,7 +138,7 @@
 			return false;
 		});
 
-		$('#section_id, #product_1').select2();
+		$('.select2,  #product_1').select2();
 		$('.datepicker').datepicker({
 			autoclose: true,
 			format: "yyyy-mm-dd",
