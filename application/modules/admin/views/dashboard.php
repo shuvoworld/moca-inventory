@@ -1,125 +1,133 @@
 <?php
+$categories = $this->db->count_all('categories');
 $products = $this->db->count_all('products');
 $assets = $this->db->count_all('assets');
 $sections = $this->db->count_all('sections');
 $designations = $this->db->count_all('designations');
 $employees = $this->db->count_all('employees');
 ?>
+
+
 <div class="row">
-    <div class="col-md-12">
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <div class="col-md-12 col-sm-12  col-md-offset-4">
-                    <h2 class="text-success">
-                        ইনভেন্টরি ম্যানেজমেন্ট সফটওয়্যার
-                     </h2>
-                </div>
+
+  <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-aqua">
+            <div class="inner">
+              <h3><?=$products?></h3>
+              <p>মালামালের তালিকা</p>
             </div>
-        </div>
-    </div>
+            <div class="icon">
+              <i class="ion ion-bag"></i>
+            </div>
+            <a href=<?php echo site_url("admin/products"); ?> style="color: #FFFFFF" class="small-box-footer">দেখুন <i
+                      class="fa fa-arrow-circle-right"></i></a>
+          </div>
+  </div>
+
+  <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-green">
+            <div class="inner">
+              <h3><?=$assets?></h3>
+
+              <p>স্থায়ী/অস্থায়ী সম্পদ</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-stats-bars"></i>
+            </div>
+            <a href=<?php echo site_url("admin/assets"); ?>  style="color: #FFFFFF" class="small-box-footer">দেখুন <i
+                      class="fa fa-arrow-circle-right"></i></a>
+          </div>
+  </div>
+
+  <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-yellow">
+            <div class="inner">
+              <h3><?=$employees?></h3>
+
+              <p>কর্মকর্তার তালিকা</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-person-add"></i>
+            </div>
+            <a href=<?php echo site_url("admin/employees"); ?>  style="color: #FFFFFF" class="small-box-footer">দেখুন <i
+                  class="fa fa-arrow-circle-right"></i></a>
+          </div>
+  </div>
+
+  <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-red">
+            <div class="inner">
+              <h3><?=$sections?></h3>
+
+              <p>শাখা/অধিশাখা</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-pie-graph"></i>
+            </div>
+            <a href=<?php echo site_url("admin/sections"); ?>  style="color: #FFFFFF" class="small-box-footer">দেখুন <i
+                  class="fa fa-arrow-circle-right"></i></a>
+          </div>
+  </div>
 </div>
-
-
-                    <h2>Modules</h2>
-
+  
 <div class="row">
-    <div class="col-md-2 col-sm-6 col-xs-12">
-      <div class="info-box bg-red">
-      <span class="info-box-icon"><span class="glyphicon glyphicon-list-alt"></span></span>
-      <div class="info-box-content">
-      <span class="info-box-text">মালামালের তালিকা
-      <span class="info-box-number"><?=$products?></span>
-      <span><a href=<?php echo site_url("admin/products"); ?> style="color: #FFFFFF" class="small-box-footer">দেখুন <i
-                      class="fa fa-arrow-circle-right"></i></a></span>
-      </div>
-  <!-- /.info-box-content -->
-      </div>
-</div>
+  <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-yellow">
+            <div class="inner">
+              <h3><?=$categories?></h3>
 
-<div class="col-md-2 col-sm-6 col-xs-12">
-      <div class="info-box bg-aqua">
-      <span class="info-box-icon"><i class="fa fa-address-card"></i></span>
-      <div class="info-box-content">
-      <span class="info-box-text">স্থায়ী/অস্থায়ী সম্পদ</span>
-      <span class="info-box-number"><?=$assets?> </span>
-      <span><a href=<?php echo site_url("admin/assets"); ?>  style="color: #FFFFFF" class="small-box-footer">দেখুন <i
-                      class="fa fa-arrow-circle-right"></i></a></span>
-      </div>
-      <!-- /.info-box-content -->
-      </div>
-</div>
+              <p>মালামালের ক্যটাগরি</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-person-add"></i>
+            </div>
+            <a href=<?php echo site_url("admin/categories"); ?>  style="color: #FFFFFF" class="small-box-footer">দেখুন <i
+                  class="fa fa-arrow-circle-right"></i></a>
+          </div>
+  </div>
 
+  <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-red">
+            <div class="inner">
+              <h3><?=$designations?></h3>
 
-
-<div class="col-md-2 col-sm-6 col-xs-12">
-  <div class="info-box bg-yellow">
-  <span class="info-box-icon"><i class="fa fa-calendar"></i></span>
-  <div class="info-box-content">
-  <span class="info-box-text">কর্মকর্তার তালিকা</span>
-  <span class="info-box-number"><?=$employees?></span>
-  <span><a href=<?php echo site_url("admin/employees"); ?>  style="color: #FFFFFF" class="small-box-footer">দেখুন <i
-                  class="fa fa-arrow-circle-right"></i></a></span>
+              <p>পদবী</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-pie-graph"></i>
+            </div>
+            <a href=<?php echo site_url("admin/designations") ?>  style="color: #FFFFFF" class="small-box-footer">দেখুন <i
+                  class="fa fa-arrow-circle-right"></i></a>
+          </div>
   </div>
 </div>
 
-</div>
+<h2>সরবরাহ ও ক্রয়</h2>
+<div class="row">
 <div class="col-md-2 col-sm-6 col-xs-12">
-  <div class="info-box bg-purple">
+  <div class="info-box bg-red">
   <span class="info-box-icon"><i class="fa fa-calendar"></i></span>
   <div class="info-box-content">
-  <span class="info-box-text">শাখা/অধিশাখা</span>
-  <span class="info-box-number"><?=$sections?></span>
-  <span><a href=<?php echo site_url("admin/sections"); ?>  style="color: #FFFFFF" class="small-box-footer">দেখুন <i
-                  class="fa fa-arrow-circle-right"></i></a></span>
+  <span class="info-box-text"> মালামাল সরবরাহ </span>
+  <span><a href=<?php echo site_url("admin/orders"); ?>  style="color: #FFFFFF" class="small-box-footer">তালিকা দেখুন
+                  <i class="fa fa-arrow-circle-right"></i></a></span>
   </div>
 </div>
-
 </div>
+
+
 <div class="col-md-2 col-sm-6 col-xs-12">
   <div class="info-box bg-green">
   <span class="info-box-icon"><i class="fa fa-calendar"></i></span>
   <div class="info-box-content">
-  <span class="info-box-text">পদবী</span>
-  <span class="info-box-number"><?=$designations?></span>
-  <span><a href=<?php echo site_url("admin/designations") ?>  style="color: #FFFFFF" class="small-box-footer">দেখুন <i
-                  class="fa fa-arrow-circle-right"></i></a></span>
-  </div>
-</div>
-
-</div>
-
-<div class="col-md-2 col-sm-6 col-xs-12">
-  <div class="info-box bg-yellow">
-  <span class="info-box-icon"><i class="fa fa-calendar"></i></span>
-  <div class="info-box-content">
-  <span class="info-box-text">কর্মকর্তার তালিকা</span>
-  <span class="info-box-number">64</span>
-  <span><a href=<?php echo site_url("admin/employees"); ?>  style="color: #FFFFFF" class="small-box-footer"> দেখুন
-                  <i class="fa fa-arrow-circle-right"></i></a></span>
-  </div>
-</div>
-</div>
-</div>
-<div class="row">
-
-<div class="col-md-2 col-sm-6 col-xs-12">
-  <div class="info-box bg-yellow">
-  <span class="info-box-icon"><i class="fa fa-calendar"></i></span>
-  <div class="info-box-content">
-  <span class="info-box-text"> মালামাল সরবরাহ </span>
-  <span><a href=<?php echo site_url("admin/orders"); ?>  style="color: #FFFFFF" class="small-box-footer"> দেখুন
-                  <i class="fa fa-arrow-circle-right"></i></a></span>
-  </div>
-</div>
-</div>
-
-
-<div class="col-md-2 col-sm-6 col-xs-12">
-  <div class="info-box bg-yellow">
-  <span class="info-box-icon"><i class="fa fa-calendar"></i></span>
-  <div class="info-box-content">
   <span class="info-box-text"> মালামাল ক্রয় </span>
-  <span><a href=<?php echo site_url("admin/purchases"); ?>  style="color: #FFFFFF" class="small-box-footer"> দেখুন
+  <span><a href=<?php echo site_url("admin/purchases"); ?>  style="color: #FFFFFF" class="small-box-footer"> তালিকা দেখুন
                   <i class="fa fa-arrow-circle-right"></i></a></span>
   </div>
 </div>
@@ -127,11 +135,8 @@ $employees = $this->db->count_all('employees');
 
 </div>
 
-                    <h2>
-                        Reports
-                     </h2>
+<h2>রিপোর্ট</h2>
                 
-
 <div class="row">
     <div class="col-md-2 col-sm-6 col-xs-12">
       <div class="info-box bg-red">

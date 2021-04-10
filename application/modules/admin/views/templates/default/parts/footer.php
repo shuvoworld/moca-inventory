@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="<?php echo base_url('assets/plugins/iCheck/all.css'); ?>">
 <script src="<?php echo base_url('assets/plugins/iCheck/icheck.min.js'); ?>"></script>
 
-
+<script src="<?php echo base_url(); ?>assets/chartjs/chart.js"></script>
 <!-- Sweet Alert library -->
 <link rel="stylesheet" href="<?php echo base_url('assets/plugins/sweet-alert/sweetalert.css'); ?>">
 <script src="<?php echo base_url('assets/plugins/sweet-alert/sweetalert.min.js'); ?>"></script>
